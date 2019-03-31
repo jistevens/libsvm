@@ -5,6 +5,7 @@ from subprocess import call
 
 class MakeBuild(SetuptoolsBuild):
     def run(self):
+        call(['make'])
         call(['make', 'lib'])
         super().run()
 
